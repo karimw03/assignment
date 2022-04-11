@@ -17,4 +17,6 @@ int main() {
 	for (int i = 0; i < 3; i++) {
 		printAnimal(arrayAnimal[i]);
 	}
+
+	d.getOwner(), c.getOwner(), f.getOwner();
 }

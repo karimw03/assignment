@@ -14,7 +14,7 @@ public:
 	virtual void print() {
 		cout << "Animal print\n";
 	}
-	virtual char getOwner() = 0;
+	virtual void getOwner() = 0;
 };
 
 class Dog :public Animal {
@@ -28,7 +28,7 @@ public:
 		Animal::print();
 		cout << "Dog print\n";
 	}
-	virtual char getOwner() { return 'd'; }
+	virtual void getOwner() { cout<<"\nOwner: Dog"; }
 };
 
 class Cat :public Animal {
@@ -43,7 +43,7 @@ public:
 		Animal::print();
 		cout << "Cat print\n";
 	}
-	virtual char getOwner() { return 'c'; }
+	virtual void getOwner() { cout << "\nOwner: Cat"; }
 };
 
 class Fish :public Animal {
@@ -54,7 +54,7 @@ private:
 public:
 	Fish(int, int, int, int);
 	~Fish();
-	virtual char getOwner() { return 'f'; }
+	virtual void getOwner() { cout << "\nOwner: Fish\n\n"; }
 };
 
 #endif

@@ -1,6 +1,6 @@
 #include <iostream>
 #include "animal.h"
-using namespace std;
+using std::cout;
 
 Animal::Animal(int n, int a) {
 	cout << "Animal created\n";
@@ -10,15 +10,6 @@ Animal::Animal(int n, int a) {
 
 Animal::~Animal() {
 	cout << "Animal destroyed\n";
-}
-
-Dog::Dog(int n,int a,int b) :Animal(n, a) {
-	cout << "Dog created\n";
-	breed = b;
-}
-
-Dog::~Dog() {
-	cout << "Dog destroted\n";
 }
 
 Cat::Cat(int n, int a, int pSize, int c) :Animal(n, a) {

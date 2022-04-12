@@ -1,3 +1,6 @@
+#ifndef cat_h
+#define cat_h
+
 #include <iostream>
 #include "animal.h"
 using std::cout;
@@ -16,3 +19,5 @@ public:
 	}
 	virtual void getOwner() { cout << "\nOwner: Cat"; }
 };
+
+#endif

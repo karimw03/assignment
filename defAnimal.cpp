@@ -12,16 +12,6 @@ Animal::~Animal() {
 	cout << "Animal destroyed\n";
 }
 
-Cat::Cat(int n, int a, int pSize, int c) :Animal(n, a) {
-	cout << "Cat created\n";
-	pawSize = pSize;
-	color = c;
-}
-
-Cat::~Cat() {
-	cout << "Cat destroyed\n";
-}
-
 Fish::Fish(int n, int a, int gCap, int sS) :Animal(n, a) {
 	cout << "Fish created\n";
 	gillCapacity = gCap;

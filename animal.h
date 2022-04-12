@@ -17,15 +17,4 @@ public:
 	virtual void getOwner() = 0;
 };
 
-class Fish :public Animal {
-private:
-	int gillCapacity;
-	int swimSpeed;
-
-public:
-	Fish(int, int, int, int);
-	~Fish();
-	virtual void getOwner() { cout << "\nOwner: Fish\n\n"; }
-};
-
 #endif

@@ -1,4 +1,7 @@
 #include "animal.h"
+#include "dog.h"
+#include "cat.h"
+#include "fish.h"
 
 void printAnimal(Animal* a) {
 	a->print();

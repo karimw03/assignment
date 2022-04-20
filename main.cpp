@@ -8,7 +8,7 @@ void printAnimal(Animal* a) {
 }
 
 int main() {
-	Dog d = Dog(1, 2, 3);
+	Dog d = Dog(1, 2);
 	Cat c = Cat(4, 5, 6, 7);
 	Fish f = Fish(8, 9, 0, 1);
 	
